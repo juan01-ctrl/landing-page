@@ -1,0 +1,39 @@
+.cards-container{
+    padding: 0 2.5rem;
+}
+.browser-card{
+    padding: 1.3rem 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   box-shadow:0px 1px 3px 3px #ebe3e3;
+   border-radius: 5px;
+   margin-bottom: 2rem;
+   background: radial-gradient(circle at 150px, #fff, rgb(250, 250, 250));
+
+   &-title{
+       margin: 0;
+       margin-top: 2rem;
+       font-size: 20px;
+       font-weight: 700;
+       letter-spacing: 1px;
+   }
+      
+   &-description{
+       color: var(--grayish-blue);
+       font-size: 15px;
+       margin-top: .3rem;
+       font-weight: 300;
+       letter-spacing: .4px;
+   }
+
+
+   &-img{
+    padding-top: .6rem;
+   }
+}
+
+.image-dots{
+    padding: 1.3rem 0;
+}

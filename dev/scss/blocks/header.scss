@@ -1,0 +1,39 @@
+$color: #c0b2da;
+
+.header{
+    background-color: transparent;
+    font-family: var(--main-font);
+    width: 100%;
+}
+
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+// .hamburger{
+//     display: none;
+// }
+
+
+
+// .main-menu{
+//     display: flex;
+//     list-style: none;
+//     justify-content: space-around;
+// }
+
+// .main-menu__item{
+//     padding: 0 1rem;
+//     text-decoration: none;
+// }
+
+// .main-menu__item a{
+//     text-decoration: none;
+//     color: rgb(247, 240, 253);
+// }
+ 

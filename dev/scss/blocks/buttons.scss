@@ -1,0 +1,36 @@
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 .7rem;
+}
+
+.button{
+    padding: 1rem 1rem;
+    margin-bottom: 20px;
+    background: none;
+    border-style: none;
+    outline-style: none;
+    border-radius: 5px;
+    font-weight: 400;
+    box-shadow:0px .5px 3px 0px #b5a7a7;
+    &-white{
+        background: radial-gradient(circle at 70px 10px, #fff, rgb(248, 239, 239));
+        color: var(--very-dark-blue);
+    //    margin-left: .6rem;
+    }
+    &-blue{
+        background-color: var(--soft-blue);
+        color: var(--dirty-white);
+        // margin-right: .6rem;
+    }
+}
+
+.button-card{
+    width: 87%;
+    border-style: none;
+    outline-style: none;
+    background-color: var(--soft-blue);
+    color:var(--dirty-white) ;
+    padding: .8rem;
+    border-radius: 5px;
+}
