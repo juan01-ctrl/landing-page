@@ -7,6 +7,7 @@ const contenedorNav = document.getElementById("contenedor-nav");
 hamburguer.addEventListener("click", () => {
     const contNav = document.querySelector(".contenedor-nav");
     const logo = document.getElementById("logo");
+    const contenedorLog = document.querySelector('.contenedor-logos')
     
     contNav.classList.toggle("active");
     hamburguer.classList.toggle("activeh");
@@ -15,10 +16,12 @@ hamburguer.addEventListener("click", () => {
         hamburguer.style.color = "#fff";
         logo.src = "./assets/images/logo-bookmarkw.svg";
         hamburguer.innerHTML = `<i class="fas fa-times"></i>`;
+        contenedorLog.style.background = "transparent"
     } else {
         hamburguer.style.color = "#000";
         logo.src = "./assets/images/logo-bookmark.svg";
         hamburguer.innerHTML = ` <i class="fas fa-bars"></i>`;
+        contenedorLog.style.background = "rgba(237, 236, 236, 0.9)"
     }
 });
 
