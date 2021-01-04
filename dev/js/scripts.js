@@ -6,9 +6,11 @@ const contenedorNav = document.getElementById("contenedor-nav");
 
 hamburguer.addEventListener("click", () => {
     const contNav = document.querySelector(".contenedor-nav");
+    const header = document.querySelector('.header')
     const logo = document.getElementById("logo");
     const contenedorLog = document.querySelector('.contenedor-logos')
     
+    header.classList.toggle('hactive')
     contNav.classList.toggle("active");
     hamburguer.classList.toggle("activeh");
     

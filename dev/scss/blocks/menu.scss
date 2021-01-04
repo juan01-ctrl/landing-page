@@ -1,32 +1,48 @@
+//TOP BAR
+.contenedor-logos {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem ;
+  z-index: 350;
+  background-color: rgba(237, 236, 236, 0.9);
+  border-radius: 0 0px 7px 7px;
+  transition: background-color .4s;
+  @media screen and (min-width: 768px){
+  width: 30%;
+    .hamburger{
+      display: none;
+    }
+  }
+}
+
+
+//NAV
+
 .contenedor-nav {
-  position: fixed;
   width: 100%;
   min-height: 100vh;
   top: 0;
   left: 0;
-  background-color: var(--very-dark-blue);
-  z-index: 100;
+  z-index: 200;
   padding: 5rem 1rem 0 1rem;
   transition: transform 0.6s;
   transform: translateY(-150%);
+  @media screen and (min-width: 768px){
+    transform: translateY(0);
+    background-color: transparent;
+    padding: 0;
+    min-height: auto;
+    height: auto;
+   width: auto;
+  }
 }
 
 .contenedor-nav.active {
   transform: translateY(0);
 }
 
-.contenedor-logos {
-  width: 100%;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 1.5rem ;
-  z-index: 300;
-  background-color: rgba(237, 236, 236, 0.9);
-  border-radius: 0 0px 7px 7px;
-  transition: background-color .4s;
-}
 
 .main-menu {
   width: 95%;
@@ -36,7 +52,10 @@
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
-
+  @media screen and (min-width: 768px){
+    display: flex;
+   padding: 0;
+  }
   &__item {
     border: 0.1px solid var(--white-soft);
     border-left: none;
@@ -47,8 +66,15 @@
     &:last-child {
       border-bottom: 0.1px solid var(--white-soft);
     }
+    @media screen and (min-width: 768px){
+      border: none;
+      margin: 0;
+      &:last-child{
+        border: none;
+      }
+    }
   }
-
+  
   &__item a {
     text-decoration: none;
     color: var(--white);
@@ -56,6 +82,11 @@
     text-transform: uppercase;
     letter-spacing: 3.5px;
     font-weight: 300;
+    @media screen and (min-width: 768px){
+      color: #000;
+      font-size: 15px;
+      font-weight: 400;
+    }
   }
 }
 
@@ -75,6 +106,15 @@
   font-size: 22px;
   letter-spacing: 2px;
   font-weight: 400;
+  border:none;
+  @media screen and (min-width: 768px){
+    width: 8rem;
+    margin-top: 0;
+    background-color: var(--soft-red);
+    box-shadow:0px .5px 3px 0px #3d3737;
+    border: none;
+    font-weight: 300;
+  }
 }
 
 .logo {
@@ -98,6 +138,9 @@
   color: rgb(255, 255, 255);
   font-size: 33px;
   justify-content: center;
+  @media screen and (min-width: 768px){
+    display:none;
+  }
 }
 .redes i {
   padding: 0 1rem;
