@@ -26,7 +26,9 @@
     }
 
     .img-accordion {
-      transition: transform 0.35s;
+      transition: transform 0.4s;
+      color: var(--soft-blue);
+      font-size: 20px;
     }
 
     .accordion-text {
@@ -44,10 +46,15 @@
   }
   &-item.deploy {
     .img-accordion {
-      transform: rotate(-90deg);
+      transform: rotate(-180deg);
+      color: var(--soft-red);
     }
     .accordion-text {
       opacity: 1;
     }
+  }
+  @media screen and(min-width: 768px){
+    width:55% ;
+  
   }
 }

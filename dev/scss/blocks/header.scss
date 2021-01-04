@@ -7,15 +7,17 @@ $color: #c0b2da;
     position: fixed;
     z-index: 200;
     height: 4rem;
-    transition: height .5s ease-in-out;
+    transition: height .5s ease-in-out, background-color .7s ease-in;
     &.hactive{
-        z-index: 400; background-color: var(--very-dark-blue);
+        z-index: 400;
+         background-color: var(--very-dark-blue);
         height: 100vh;
     }
     @media screen and(min-width: 768px){
         height: 4rem;
+        position: sticky;
         display: flex;
-        background:rgba(237, 236, 236, 0.9);
+        background:rgba(255, 255, 255, 0.9);
         align-items: center;
         justify-content: space-between;
         padding: 0 1rem;
