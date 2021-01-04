@@ -11,6 +11,7 @@
     width: 95%;
     text-align: center;
     padding: 1rem 0;
+    cursor: pointer;
     @media screen and(min-width: 768px){
       width: 15%;
       &:first-child{
@@ -67,7 +68,7 @@
      @media screen and(min-width: 768px){
        flex-direction: row;
        &::after {
-         top: 95px;
+         top: 135px;
          height: 350px;
          width: 480px;
        }

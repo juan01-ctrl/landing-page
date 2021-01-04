@@ -91,6 +91,7 @@
 }
 
 .login-button {
+  z-index: 500;
   cursor: pointer;
   outline: none;
   width: 85%;
@@ -106,8 +107,7 @@
   font-size: 22px;
   letter-spacing: 2px;
   font-weight: 400;
-  border:none;
-  @media screen and (min-width: 768px){
+  @media screen and(min-width: 768px){
     width: 8rem;
     margin-top: 0;
     background-color: var(--soft-red);
