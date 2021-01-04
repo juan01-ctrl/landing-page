@@ -46,22 +46,19 @@
                         @media screen and(min-width: 768px){
                             flex-direction: row;
                             width: 40%;
+                            align-items: center;
                             .button-red{
                                 margin-left: 1rem;
                                 width:40% ;
-                            
+                                margin: 0;
+                                margin-left: .4rem;
+                            }
+                            .input-footer{
+                                margin-bottom: 0;
                             }
                         }
         }
 
-    }
-    &-sec-2{
-        background-color:  var(--very-dark-blue);
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-between;
-        height: auto;
     }
     .logo-footer{
         width: 175px;
@@ -72,6 +69,11 @@
         margin: 0;
         text-align: center;
         list-style: none;
+        @media screen and(min-width:768px){
+            display: flex;
+            justify-content: space-around;
+            width: 30vw;
+        }
     }
     .li-footer-item{
         margin-bottom: 3rem;
@@ -87,13 +89,51 @@
         &:last-child{
             margin-bottom: 0;
         }
-      
+        
     }
     .redes{
+        display: flex;
+        margin-top: 10rem;
+        color: rgb(255, 255, 255);
+        font-size: 33px;
+        justify-content: center;
         margin-top: 3rem;
         margin-bottom: 3rem;
         .fab{
             padding: 0 1.7rem;
         }
+    }
+}
+.footer-sec-2{
+    background-color:  var(--very-dark-blue);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+
+    @media screen and(min-width:768px){
+       flex-direction: row;
+       height: 5rem;
+       justify-content: space-between;
+       .log-menu{
+           justify-content: start;
+           align-items: center;
+           display: flex;
+           margin-left: 4rem;
+       }
+       .logo-footer{
+           margin: 0;
+           margin-right: 2rem;
+           padding-top: .1rem;
+       }
+       .li-footer-item{
+           margin-bottom: 0;
+           margin-right: 1rem;
+       }
+       .redes{
+           justify-content: flex-end;
+           margin-right: 2rem;
+       }
     }
 }

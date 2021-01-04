@@ -1,6 +1,6 @@
 
 .section{
-  padding-bottom: 4rem;
+ padding: 0 1rem 4rem 1rem;
   
 &-title,
 &-text{
@@ -76,6 +76,10 @@ font-weight: 400;
 .section-2{
   
   @media screen and(min-width: 768px) {
+    .section-text{
+      text-align: center;
+      padding: 0 23rem;
+    }
     .tabs{
       flex-direction: row;
       &-item:first-child{
@@ -95,7 +99,7 @@ font-weight: 400;
     }
     .section-text{
       text-align: center;
-      padding: 0 20rem;
+      padding: 0 23rem;
     }
     .browser-card{
 

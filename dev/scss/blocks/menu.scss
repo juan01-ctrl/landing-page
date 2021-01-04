@@ -10,7 +10,7 @@
   border-radius: 0 0px 7px 7px;
   transition: background-color .4s;
   @media screen and (min-width: 768px){
-    background-color: transparent;
+   
   width: 30%;
     .hamburger{
       display: none;
@@ -40,7 +40,20 @@
     padding: 0;
     min-height: auto;
     height: auto;
-   width: auto;
+    width: auto;
+  }
+  .redes {
+    display: flex;
+    margin-top: 10rem;
+    color: rgb(255, 255, 255);
+    font-size: 33px;
+    justify-content: center;
+    @media screen and (min-width: 768px){
+      display:none;
+    }
+  }
+  .redes i {
+    padding: 0 1rem;
   }
 }
 
@@ -59,7 +72,7 @@
   text-align: center;
   @media screen and (min-width: 768px){
     display: flex;
-   padding: 0;
+    padding: 0;
   }
   &__item {
     border: 0.1px solid var(--white-soft);
@@ -138,17 +151,5 @@
 }
 .hamburger.activeh {
   transform: rotate(180deg);
-}
-.redes {
-  display: flex;
-  margin-top: 10rem;
-  color: rgb(255, 255, 255);
-  font-size: 33px;
-  justify-content: center;
-  @media screen and (min-width: 768px){
-    display:none;
-  }
-}
-.redes i {
-  padding: 0 1rem;
+  
 }

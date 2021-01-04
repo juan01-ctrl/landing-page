@@ -29,14 +29,18 @@ hamburguer.addEventListener("click", () => {
 
 
 contenedorNav.addEventListener('click', (e)=>{
+  const contenedorLog = document.querySelector('.contenedor-logos')
+  const header = document.querySelector('.header')
     const logo = document.getElementById("logo");
     const hamburguer = document.getElementById("icon-menu");
     if(e.target.classList.contains("main-menu__item") || e.target.classList.contains("link-menu")){
         contenedorNav.classList.remove('active')
+        header.classList.remove('hactive')
         hamburguer.classList.remove('activeh')
         hamburguer.style.color = "#000";
         logo.src = "./assets/images/logo-bookmark.svg";
         hamburguer.innerHTML = ` <i class="fas fa-bars"></i>`;
+        contenedorLog.style.background = "rgba(237, 236, 236, 0.9)"
     }
      
 })
