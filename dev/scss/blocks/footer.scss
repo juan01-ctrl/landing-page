@@ -41,6 +41,10 @@
                 color: #fff;
                 font-weight: 500;
                 box-shadow:0px .5px 3px 0px #3c3d54;
+                transition: background-color .3s;
+                &:hover{
+                    background-color: rgb(202, 78, 78);
+                }
             }
             
                         @media screen and(min-width: 1024px){
@@ -93,7 +97,6 @@
     }
     .redes{
         display: flex;
-        margin-top: 10rem;
         color: rgb(255, 255, 255);
         font-size: 33px;
         justify-content: center;
@@ -102,6 +105,7 @@
         .fab{
             padding: 0 1.7rem;
         }
+
     }
 }
 .footer-sec-2{
@@ -130,7 +134,6 @@
        .li-footer-item{
            color: white;
            margin-bottom: 0;
-           margin-right: .7rem;
            font-size: 13px;
            cursor: pointer;
            & .link-menu:hover{
@@ -140,8 +143,24 @@
 
        .redes{
            justify-content: flex-end;
-           margin-right: 2rem;
-           cursor: pointer;
+           margin-right: 3rem;
+           
+           .fab{
+               padding:0 0;
+               &:first-child{
+                   margin-right: 2rem;
+               }
+           }
        }
     }
+}
+.fa-instagram,.fa-facebook-square{
+cursor: pointer;
+}
+.fa-instagram{
+    color: var(--soft-red);
+}
+
+.fa-facebook-square{
+  color: var(--soft-blue-hover);
 }
