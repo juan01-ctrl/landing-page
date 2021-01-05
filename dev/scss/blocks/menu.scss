@@ -104,6 +104,10 @@
       color: #000;
       font-size: 15px;
       font-weight: 400;
+      transition: color .3s;
+      &:hover{
+        color:var(--soft-blue-hover);
+      }
     }
   }
 }
