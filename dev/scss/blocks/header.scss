@@ -14,10 +14,13 @@ $color: #c0b2da;
         height: 100vh;
     }
     @media screen and(min-width: 1024px){
+
         height: 4rem;
         position: sticky;
         display: flex;
-        background:rgba(255, 255, 255, 0.9);
+        //ARREGLAR background
+        background-color: rgba(237, 236, 236, 0.9);
+
         align-items: center;
         justify-content: space-between;
         padding: 0 1rem;
