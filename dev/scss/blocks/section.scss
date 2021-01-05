@@ -36,9 +36,9 @@ font-weight: 400;
     background-color: var(--soft-blue);
     z-index: -1;
     @media screen and (min-width: 1024px){
-      width: 500px;
-      top: 220px;
-      height: 380px;
+      width: 40%;
+      top: 28%;
+      height: 52%;
     }
   }
   @media screen and (min-width: 1024px){
@@ -79,7 +79,7 @@ font-weight: 400;
   @media screen and(min-width: 1024px) {
     .section-text{
       text-align: center;
-      padding: 0 23rem;
+      padding: 0 25%;
     }
     .tabs{
       flex-direction: row;

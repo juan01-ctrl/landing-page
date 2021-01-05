@@ -13,7 +13,7 @@
     padding: 1rem 0;
     cursor: pointer;
     @media screen and(min-width: 1024px){
-      width: 15%;
+      width: 18%;
       &:first-child{
         border-top: none;
       }
@@ -55,9 +55,9 @@
     &::after {
       content: "";
       position: absolute;
-      height: 225px;
-      width: 270px;
-      top: 65px;
+      height: 30%;
+      width:84%;
+      top: 13%;
       left: 0px;
       display: block;
       border-top-right-radius: 90px;
@@ -68,9 +68,9 @@
     @media screen and(min-width: 1024px){
       flex-direction: row;
       &::after {
-        top: 135px;
-        height: 350px;
-        width: 480px;
+        top: 24%;
+        height: 73%;
+        width: 43%;
       }
       .tab-info{
         padding: 0 4rem;
