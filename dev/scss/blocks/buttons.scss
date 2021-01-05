@@ -15,11 +15,13 @@
     box-shadow:0px .5px 3px 0px #b5a7a7;
     cursor: pointer;
     &-white{
-        background-image: radial-gradient(circle at 70px 10px, #fff, rgb(248, 239, 239));
+        background-image: radial-gradient(circle at 100px 10px, #fff, rgb(213, 194, 194));
         color: var(--very-dark-blue);
-        transition: background-image 3s ease-in-out;
+        background-position:left ;
+        background-size: 300%;
+        transition: background-position .28s ease-in-out;
         &:hover{
-            background-image: radial-gradient(circle at 70px 10px, rgb(252, 246, 246), rgb(213, 188, 188));
+            background-position:right;
         }
     //    margin-left: .6rem;
     }
