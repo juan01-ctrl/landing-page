@@ -21,14 +21,13 @@ font-weight: 400;
 .section-1 {
 
   position: relative;
-  padding: 6rem 1rem 0 1rem;
-
+  padding: 6rem 2% 0 2%;
   &::before {
     content: "";
     position: absolute;
-    height: 200px;
-    width: 300px;
-    top: 150px;
+    height: 30%;
+    width:80%;
+    top: 20%;
     right: 0px;
     display: block;
     border-top-left-radius: 90px;
