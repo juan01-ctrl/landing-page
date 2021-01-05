@@ -70,10 +70,12 @@
       &::after {
         top: 24%;
         height: 73%;
-        width: 43%;
+        width: 37%;
+        margin-right: 3rem;
       }
       .tab-info{
-        padding: 0 4rem;
+        padding: 0 10%;
+        align-items: start;
         
       }
       .tabs-text,.tabs-title{
@@ -103,4 +105,5 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+
 }

@@ -13,15 +13,24 @@
     border-radius: 5px;
     font-weight: 400;
     box-shadow:0px .5px 3px 0px #b5a7a7;
+    cursor: pointer;
     &-white{
-        background: radial-gradient(circle at 70px 10px, #fff, rgb(248, 239, 239));
+        background-image: radial-gradient(circle at 70px 10px, #fff, rgb(248, 239, 239));
         color: var(--very-dark-blue);
+        transition: background-image 3s ease-in-out;
+        &:hover{
+            background-image: radial-gradient(circle at 70px 10px, rgb(252, 246, 246), rgb(213, 188, 188));
+        }
     //    margin-left: .6rem;
     }
     &-blue{
         background-color: var(--soft-blue);
         color: var(--dirty-white);
         // margin-right: .6rem;
+        transition: background-color .3s;
+        &:hover{
+            background-color: var(--soft-blue-hover);
+        }
     }
 }
 
