@@ -37,14 +37,14 @@ font-weight: 400;
     z-index: -1;
     @media screen and (min-width: 1024px){
       width: 40%;
-      top: 28%;
-      height: 52%;
+      top: 35%;
+      height: 60%;
     }
   }
   @media screen and (min-width: 1024px){
     display: flex;
     padding-top: 8rem;
-    padding-bottom: 7rem;
+    padding-bottom: 1rem;
     flex-direction: row-reverse;
     padding-left: 2rem;
     padding-right: 2rem;
